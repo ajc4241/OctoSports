@@ -15,7 +15,15 @@
 </head>
 <body>
 <table class="center">
-    <th></th>
+    {% if rand == 1 %}
+        <th><iframe width="560" height="315" src="https://www.youtube.com/embed/cK1igzo7XKs?start=28&amp;end=91" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+    {% elif rand == 2 %}
+        <th><iframe width="560" height="315" src="https://www.youtube.com/embed/TrksXthaMz8?start=66&amp;end=104" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+    {% elif rand == 3 %}
+        <th><iframe width="560" height="315" src="https://www.youtube.com/embed/zJGvJtE94tY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+    {% elif rand == 4 %}
+        <th><iframe width="560" height="315" src="https://www.youtube.com/embed/-jDKJT2dDZQ?start=48&amp;end=105" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+    {% endif %}
     <tr><td><a href="/"><input type="image" id="cyclist" alt="cyclist" src="/static/cyclistCat.png"></a></td></tr>
 </table>
 </body>

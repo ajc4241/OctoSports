@@ -15,7 +15,11 @@
 </head>
 <body>
 <table class="center">
-    <th></th>
+    {% if rand == 1 %}
+        <th></th>
+    {% elif rand == 2 %}
+        <th></th>
+    {% endif %}
     <tr><td><a href="/"><input type="image" id="soccer" alt="soccer" src="/static/soccerCat.png"></a></td></tr>
 </table>
 </body>

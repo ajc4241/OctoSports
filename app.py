@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+import random
 
 app = Flask(__name__)
 
@@ -8,10 +9,12 @@ def home():
 
 @app.route("/cyclist")
 def cyclist():
-    return render_template("cyclist.html")
+    r = random.randint(1,4)
+    return render_template("cyclist.html", rand=r)
 @app.route("/football")
 def football():
-    return render_template("football.html")
+    r = random.randint(1,4)
+    return render_template("football.html", rand=r)
 @app.route("/hockey")
 def hockey():
     return render_template("hockey.html")

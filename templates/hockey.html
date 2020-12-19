@@ -15,7 +15,11 @@
 </head>
 <body>
 <table class="center">
-    <th><iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/sccz3sjZlo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+    {% if rand == 1 %}
+        <th><iframe width="560" height="315" align="center" src="https://www.youtube.com/embed/sccz3sjZlo8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></th>
+    {% elif rand == 2 %}
+        <th></th>
+    {% endif %}
     <tr><td><a href="/"><input type="image" id="hockey" alt="hockey" src="/static/hockeyCat.png"></a></td></tr>
 </table>
 </body>
