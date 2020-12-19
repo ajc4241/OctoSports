@@ -3,7 +3,7 @@
     <head>
         <style>
             table, th, td {
-              border: 0px;
+              border: 0px solid black;
             }
             table.center {
               margin-left: auto;
@@ -12,30 +12,20 @@
         </style>
     </head>
     <body>
-        <table class="center">
+        <table class="table" cellspacing="0" cellpadding="0">
               <tr>
-                  <th>Cycling</th>
-                  <th>Football</th>
-                  <th>Hockey</th>
-                  <th>Running</th>
+                  <td><input type="image" id="cyclist" alt="cyclist" src="/static/cyclistCat.png" height="50%"></td>
+                  <td><input type="image" id="football" alt="football" src="/static/footballCat.png" height="50%"></td>
+                  <td><input type="image" id="hockey" alt="hockey" src="/static/hockeyCat.png" height="50%"></td>
+                  <td><input type="image" id="runner" alt="runner" src="/static/runnerCat.png" height="50%"></td>
+                  <td><input type="image" id="bunny" alt="bunny" src="/static/bunnyCat.png" height="50%"></td>
               </tr>
               <tr>
-                  <td><img src="{{url_for('static', filename='cyclistCat.png')}}" align="middle" /></td>
-                  <td><img src="{{url_for('static', filename='footballCat.png')}}" align="middle" /></td>
-                  <td><img src="{{url_for('static', filename='hockeyCat.png')}}" align="middle" /></td>
-                  <td><img src="{{url_for('static', filename='runnerCat.png')}}" align="middle" /></td>
-              </tr>
-              <tr>
-                  <th>Scuba Diving</th>
-                  <th>Snowboarding</th>
-                  <th>Soccer</th>
-                  <th>Swimming</th>
-              </tr>
-              <tr>
-                  <td><img src="{{url_for('static', filename='scubaCat.png')}}" align="middle" /></td>
-                  <td><img src="{{url_for('static', filename='snowboardCat.png')}}" align="middle" /></td>
-                  <td><img src="{{url_for('static', filename='soccerCat.png')}}" align="middle" /></td>
-                  <td><img src="{{url_for('static', filename='swimCat.png')}}" align="middle" /></td>
+                  <td><input type="image" id="scuba" alt="scuba" src="/static/scubaCat.png" height="50%"></td>
+                  <td><input type="image" id="snowboard" alt="snowboard" src="/static/snowboardCat.png" height="50%"></td>
+                  <td><input type="image" id="soccer" alt="soccer" src="/static/soccerCat.png" height="50%"></td>
+                  <td><input type="image" id="swim" alt="swim" src="/static/swimCat.png" height="50%"></td>
+                  <td><input type="image" id="panda" alt="panda" src="/static/pandaCat.png" height="50%"></td>
               </tr>
         </table>
     </body>
