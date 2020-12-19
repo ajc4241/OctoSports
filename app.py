@@ -9,35 +9,43 @@ def home():
 
 @app.route("/cyclist")
 def cyclist():
-    r = random.randint(1,4)
+    r = random.randint(1, 4)
     return render_template("cyclist.html", rand=r)
 @app.route("/football")
 def football():
-    r = random.randint(1,4)
+    r = random.randint(1, 4)
     return render_template("football.html", rand=r)
 @app.route("/hockey")
 def hockey():
-    return render_template("hockey.html")
+    r = random.randint(1, 4)
+    return render_template("hockey.html", rand=r)
 @app.route("/runner")
 def runner():
-    return render_template("runner.html")
+    r = random.randint(1, 4)
+    return render_template("runner.html", rand=r)
 @app.route("/bunny")
 def bunny():
-    return render_template("bunny.html")
+    r = random.randint(1, 4)
+    return render_template("bunny.html", rand=r)
 @app.route("/scuba")
 def scuba():
-    return render_template("scuba.html")
+    r = random.randint(1, 4)
+    return render_template("scuba.html", rand=r)
 @app.route("/snowboard")
 def snowboard():
-    return render_template("snowboard.html")
+    r = random.randint(1, 3)
+    return render_template("snowboard.html", rand=r)
 @app.route("/soccer")
 def soccer():
-    return render_template("soccer.html")
+    r = random.randint(1, 4)
+    return render_template("soccer.html", rand=r)
 @app.route("/swim")
 def swim():
-    return render_template("swim.html")
+    r = random.randint(1, 4)
+    return render_template("swim.html", rand=r)
 @app.route("/panda")
 def panda():
-    return render_template("panda.html")
+    r = random.randint(1, 4)
+    return render_template("panda.html", rand=r)
 if __name__ == "__main__":
     app.run()
