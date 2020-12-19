@@ -1,11 +1,42 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Home page</title>
-</head>
-<body>
-    <h1>Home Page!</h1>
-    <p>Hello!</p>
-</body>
+<html>
+    <head>
+        <style>
+            table, th, td {
+              border: 0px;
+            }
+            table.center {
+              margin-left: auto;
+              margin-right: auto;
+            }
+        </style>
+    </head>
+    <body>
+        <table class="center">
+              <tr>
+                  <th>Cycling</th>
+                  <th>Football</th>
+                  <th>Hockey</th>
+                  <th>Running</th>
+              </tr>
+              <tr>
+                  <td><img src="{{url_for('static', filename='cyclistCat.png')}}" align="middle" /></td>
+                  <td><img src="{{url_for('static', filename='footballCat.png')}}" align="middle" /></td>
+                  <td><img src="{{url_for('static', filename='hockeyCat.png')}}" align="middle" /></td>
+                  <td><img src="{{url_for('static', filename='runnerCat.png')}}" align="middle" /></td>
+              </tr>
+              <tr>
+                  <th>Scuba Diving</th>
+                  <th>Snowboarding</th>
+                  <th>Soccer</th>
+                  <th>Swimming</th>
+              </tr>
+              <tr>
+                  <td><img src="{{url_for('static', filename='scubaCat.png')}}" align="middle" /></td>
+                  <td><img src="{{url_for('static', filename='snowboardCat.png')}}" align="middle" /></td>
+                  <td><img src="{{url_for('static', filename='soccerCat.png')}}" align="middle" /></td>
+                  <td><img src="{{url_for('static', filename='swimCat.png')}}" align="middle" /></td>
+              </tr>
+        </table>
+    </body>
 </html>
